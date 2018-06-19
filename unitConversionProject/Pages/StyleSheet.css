@@ -1,16 +1,15 @@
-﻿body
-	{
-	font-size:14px;
-	font-family:Arial;
-	color:#07425B;
-	background-color:white;
-	margin-top:25px;
-	margin-bottom:25px;
-	margin-left:25px;
-	margin-right:25px;
-	}
-H1
-	{
+﻿body {
+    font-size: 14px;
+    font-family: Arial;
+    color: #08415C;
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+H1 {
 	font-size:25px;
 	font-family:Arial;
 	color:#B8695C;
@@ -18,9 +17,9 @@ H1
 	margin-bottom:25px;
 	margin-left:25px;
 	margin-right:25px;
-	}
-H3
-	{
+}
+
+H3 {
 	font-size:18px;
 	font-family:Arial;
 	color:#CDBB79;
@@ -28,10 +27,10 @@ H3
 	margin-bottom:25px;
 	margin-left:25px;
 	margin-right:25px;
-	}
-input
-	{
+}
+
+input {
 	font-size:14px;
 	font-family:Arial;
 	color:#52A39D;
-	}
+}
