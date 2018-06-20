@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-8" style="text-align: center">
             <div id="app">
-                <input v-model="inputValue"   type="text" placeholder="Donkey Power">
+                <input v-model="inputValue"   type="number" placeholder="Donkey Power">
                 <button v-on:click="buttonClicked" class="btn btn-convert">Convert</button>
                 <p style="display: inline"> = {{convertedValue}} Watts</p>
             </div>
@@ -46,9 +46,8 @@
         },
         methods: {
             buttonClicked: function () {
-                var num = parseInt(this.inputValue);
-                var final = num * this.conversionRate;
-                this.convertedValue = final.toString();
+                this.convertedValue = this.inputValue * this.conversionRate;
+        
             }
         }
 
