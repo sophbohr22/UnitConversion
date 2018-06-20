@@ -9,14 +9,14 @@
 <body>
     <div style="background-color: #08415C">
         <p>/</p>
-        <h1>Time Conversion</h1>
+        <h1>Time Converter</h1>
         <h3 style="text-align: center">Sophie Bohr</h3>
         <p>/</p>
     </div>
 
     <div>
         <h2 style="text-align: center">
-            Convert from shakes to nanoseconds
+            1 Shake to 10 Nanoseconds
         </h2>
     </div>
 
@@ -24,9 +24,9 @@
         <div class="col-md-2">
         </div>
         <div class="col-md-8" style="text-align: center">
-            <input v-model="conVal"  />
+            <input v-model="conVal"  type="text" placeholder="Shakes"/>
             <button class="btn btn-convert" v-on:click="convertClicked">Convert</button>
-            <p style="display: inline"> = {{ conversion }} nanoseconds</p>
+            <p style="display: inline"> = {{ conversion }} Nanoseconds</p>
         </div>
         <div class="col-md-2">
         </div>
