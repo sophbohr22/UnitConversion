@@ -46,6 +46,20 @@ h3 {
     border-color: #B8695C;
 }
 
+.btn-nav {
+    color: #F2F2F2;
+    background-color: #52A39D;
+    font-family: Arial;
+    border-color: #F2F2F2;
+}
+
+.btn-nav:hover {
+    color: #52A39D;
+    background-color: #F2F2F2;
+    font-family: Arial;
+    border-color: #52A39D;
+}
+
 input {
 	font-size:14px;
 	font-family:Arial;
