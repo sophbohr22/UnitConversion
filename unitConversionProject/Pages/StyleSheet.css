@@ -10,13 +10,15 @@
 }
 
 H1 {
-	font-size:25px;
-	font-family:Arial;
-	color:#B8695C;
-	margin-top:25px;
-	margin-bottom:25px;
-	margin-left:25px;
-	margin-right:25px;
+    font-size: 35px;
+    font-family: Arial;
+    color: #52A39D;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 H3 {
