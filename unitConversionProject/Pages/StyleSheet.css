@@ -16,7 +16,6 @@ H1 {
     text-align: center;
     font-weight: bold;
     margin-top: 25px;
-    margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -25,10 +24,20 @@ H3 {
 	font-size:18px;
 	font-family:Arial;
 	color:#CDBB79;
-	margin-top:25px;
-	margin-bottom:25px;
-	margin-left:25px;
-	margin-right:25px;
+}
+
+.btn-convert {
+    color: #F2F2F2;
+    background-color: #B8695C;
+    font-family: Arial;
+    border-color: #F2F2F2;
+}
+
+.btn-convert:hover {
+    color: #B8695C;
+    background-color: #F2F2F2;
+    font-family: Arial;
+    border-color: #B8695C;
 }
 
 input {
