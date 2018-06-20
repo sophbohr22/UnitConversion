@@ -9,7 +9,7 @@
     margin-right: 25px;
 }
 
-H1 {
+h1 {
     font-size: 35px;
     font-family: Arial;
     color: #52A39D;
@@ -20,7 +20,13 @@ H1 {
     margin-right: 25px;
 }
 
-H3 {
+h2 {
+    font-size: 22px;
+    font-family: Arial;
+    color: #814374;
+}
+
+h3 {
 	font-size:18px;
 	font-family:Arial;
 	color:#CDBB79;
