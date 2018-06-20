@@ -26,11 +26,13 @@
             <div id="app">
                 <input v-model="inputValue">
                 <button v-on:click="buttonClicked" class="btn btn-convert">Convert</button>
-                <p style="display: inline;"> = {{convertedValue}} Watts</p>
+                <p style="display: inline"> = {{convertedValue}} Watts</p>
             </div>
         </div>
     </div>
-
+    <div>
+    <a href="index.html" class="btn btn-nav">Back</a>
+    </div>
 </body>
 
 <script src="https://unpkg.com/vue"></script>
@@ -51,6 +53,7 @@
         }
 
     })
+
 </script>
 
 </html>
