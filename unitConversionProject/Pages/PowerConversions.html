@@ -1,12 +1,56 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
+
 <head>
-    <meta charset="utf-8" />
-    <link href="../bootstrap.css" rel="stylesheet" />
-    <link href="StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="StyleSheet.css" rel="stylesheet">
     <title></title>
 </head>
+
 <body>
+    <div style="background-color: #08415C">
+        <p>/</p>
+        <h1>Power Converter</h1>
+        <h3 style="text-align: center">Grant Parfrey</h3>
+        <p>/</p>
+    </div>
+    <div class="row padding:50px" style="text-align: center">
+        <h2>1 Donkey Power to 250 Watts</h2>
+    </div>
+    <div class="row">
+
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8" style="text-align: center">
+            <div id="app" style="padding: 20px;">
+                <input v-model="inputValue">
+                <button v-on:click="buttonClicked" class="btn btn-convert">Convert Them!</button>
+                <p style="display: inline;"> = {{convertedValue}} Watts</p>
+            </div>
+        </div>
+    </div>
 
 </body>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            conversionRate: 250,
+            inputValue: "",
+            convertedValue: "___"
+        },
+        methods: {
+            buttonClicked: function () {
+                var num = parseInt(this.inputValue);
+                var final = num * this.conversionRate;
+                this.convertedValue = final.toString();
+            }
+        }
+
+    })
+</script>
+
 </html>
