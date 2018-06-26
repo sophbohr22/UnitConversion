@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="../bootstrap.css" rel="stylesheet" />
+	<link href="StyleSheet.css" rel="stylesheet" />
+	<title></title>
+</head>
+<body>
+	<div style="background-color: #08415C">
+		<p>/</p>
+		<h1>Yard Converter</h1>
+		<h3 style="text-align: center">Kate Martino</h3>
+		<p>/</p>
+	</div>
+	<div>
+		<h2 style="text-align: center">
+			1 Yard to 3 Feet
+		</h2>
+	</div>
+	<div class="row" id="app">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8" style="text-align: center">
+			<input v-model="conVal" type="number" placeholder="Yards" />
+			<button class="btn btn-convert" v-on:click="convertClicked">Convert</button>
+			<p style="display: inline"> = {{ conversion }} Feet</p>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<div>
+		<a href="index.html" class="btn btn-nav">Back</a>
+	</div>
+</body>
+</html>
+
+<script src= "https://unpkg.com/vue"></script>
+<script>
+	var app = new Vue({
+		el: '#app',
+		data: {
+			conversion: "_____",
+			conVal: ""
+		},
+		methods: {
+			convertClicked: function() {
+				this.conversion = this.conVal * 3;
+			}
+
+		}
+	}) 
+
+</script>
